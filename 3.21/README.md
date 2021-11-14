@@ -18,11 +18,15 @@ the program. Perform necessary error checking to ensure that a positive
 integer is passed on the command line.
 
 Solution approach:
+
 The progrram needs to generate the pattern using a child process so fork() system call is used.
 Fork system call is used for creating a new process, which is called child process, which runs concurrently with the process that makes the fork() call (parent process). After a new child process is created, both processes will execute the next instruction following the fork() system call. A child process uses the same pc(program counter), same CPU registers, same open files which use in the parent process.
 The wait() function suspends processing until a child process has ended.So the parent process is completed after the child process executes using wait() system call.
 
 How to compile and run
+
 Using the command line 
+
 Compile: gcc \<filename>.c
+
 Run: ./a.out \<parameter>
