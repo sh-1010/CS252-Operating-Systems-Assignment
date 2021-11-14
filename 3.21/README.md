@@ -24,5 +24,5 @@ The wait() function suspends processing until a child process has ended.So the p
 
 How to compile and run
 Using the command line 
-Compile: gcc <filename>.c
-Run: ./a.out <parameter>
+Compile: gcc \<filename>.c
+Run: ./a.out \<parameter>
